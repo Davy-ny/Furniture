@@ -9,10 +9,11 @@
     align-items: center;
     position: fixed;
     top: 0;
-    
-    
 }
 
+.banner{
+    margin: 0 10px;
+}
 
 .info_header{
     height: 40px;
@@ -52,6 +53,15 @@ footer{
     color: white; 
     height: 400px;
     padding: 20px; 
+}
+
+.card-body{
+    color: black;
+}
+
+.img-fluid{
+    height: 180px;
+    width: 200px;
 }
 
 
@@ -300,7 +310,7 @@ color: black;
 }
 
 .section_three_living{
-    height: 450px;
+    height: 840px;
     background: white;
 }
 
