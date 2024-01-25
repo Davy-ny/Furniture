@@ -1,0 +1,81 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>index</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        
+        <header class="banner">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="{% static 'img/finds.jpg' %}" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="{% static 'img/COUCH.jpeg' %}" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="{% static 'img/neighbourhood.webp' %}" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </header>  
+
+        <section class="section_one">
+            <div class="first_line">
+                <div><a><img src="{% static 'img/seat.jpg' %}" alt=""></a><br/>
+                    <strong><a href="{% url "living" %}">Living Room</a></strong>
+                    </div>
+        
+                    <div class="img_mid"><a><img src="{% static 'img/bed.jpg' %}" alt=""></a><br/>
+                        <strong><a href="{% url "bedroom"%}">Bedroom</a></strong>
+                    </div>
+        
+                    <div><a><img src="{% static 'img/dining.jpg' %}" alt=""></a><br/>
+                        <strong><a href="{% url "kitchen_dining"%}">Kitchen and Dining</a></strong>
+                    </div>
+            </div>
+
+            <div class="second_line">
+                <div class="img_next"><a><img src="{% static 'img/IMG_20210327_173859_504.jpg' %}" alt=""></a><br/>
+                    <strong><a href="{% url "Outdoor"%}">Outdoor</a></strong>
+                </div>
+
+                <div class="img_sec_mid"><a><img src="{% static 'img/COUCH.jpeg' %}" alt=""></a><br/>
+                    <strong><a href="{% url "homeoffice"%}">Home Office</a></strong>
+                </div>
+
+                <div><a><img src="{% static 'img/IMG_20210327_173859_504.jpg' %}" alt=""></a><br/>
+                    <strong>Cut Prices</strong>
+                </div>
+
+
+            </div>
+        </section>
+        <section class="section_two">section-two</section>
+        <footer>footer</footer>
+    
+    </body>
+</html>
+
+
+
+{% endblock %}

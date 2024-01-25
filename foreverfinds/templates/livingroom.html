@@ -1,0 +1,75 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+{% load static %}
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>living</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link stylesheet="" href="{% static "css/style_living.css"%}" >
+        
+
+    </head>
+    <body>
+        
+        <section class="section_two_living">
+            <div class="side_menu">
+                <strong>Categories</strong>
+                <div class="list-group">
+                    <button type="button" class="list-group-item list-group-item-action">Sofas</button>
+                    <button type="button" class="list-group-item list-group-item-action">Tables</button>
+                    <button type="button" class="list-group-item list-group-item-action">Tv Stands</button>
+                    <button type="button" class="list-group-item list-group-item-action">Storage Cabinets</button>
+                    <button type="button" class="list-group-item list-group-item-action">Chairs</button>
+                </div>
+            </div>
+
+                <div class="first_line_living">
+                        <div><a><img src="{% static 'img/seat.jpg' %}" alt=""></a><br/>
+                        <strong><a href="{% url "living" %}">Sofas</a></strong>
+                        </div>
+            
+                        <div class="img_mid"><a><img src="{% static 'img/table.jpg' %}" alt=""></a><br/>
+                            <strong><a href="{% url "bedroom"%}">Tables</a></strong>
+                        </div>
+            
+                        <div><a><img src="{% static 'img/Tv Stand.jpg' %}" alt=""></a><br/>
+                            <strong><a href="{% url "kitchen_dining"%}">Tv Stands</a></strong>
+                        </div>
+                  
+                </div>
+        </section>
+
+        <section class="section_three_living">
+            <div>Our Furniture</div>
+            <div class="item">
+                <div>
+                    <a><img  class="item_img" src="{% static 'img/seat.jpg' %}" alt=""></a>
+                </div><br/>
+
+                <div>
+                    <strong>3 Seater Leather Sofa</strong>
+                </div>
+
+                <div class="price">
+                    <span class="before">Ksh.58,000</span>
+                    <button class="btn_addcart">Add to Cart</button>
+                    <button class="btn_now">Buy Now</button>
+            
+                </div>
+            </div>
+            
+        </section>        
+            
+        <footer>footer</footer>  
+        
+    </body>
+</html>
+
+{% endblock %}

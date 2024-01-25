@@ -1,0 +1,74 @@
+{% load static %}
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="{% static '/css/style.css' %}">
+
+<header class="nav_header">
+    <div class="logo">
+        
+        <strong><h2><a href="{% url 'index'%}">FOREVER FINDS</a></h2></strong>
+        
+    </div>
+    <nav class="nav_links">
+        <ul>
+            <strong><li><a href="{% url 'living' %}">Living Room</a></li></strong>
+            <strong><li><a href="{% url "bedroom"%}">Bedroom</a></li></strong>
+            <strong><li><a href="{% url "homeoffice"%}">Home Office</a></li></strong>
+            <strong><li><a href="{% url "kitchen_dining"%}">Kitchen And Dining Room</a></li></strong>
+            <strong><li><a href="{% url "Outdoor"%}">Outdoor</a></li></strong>
+            <strong><li><a href="{% url "contact"%}">Contact Us</a></li></strong>
+        </ul>
+    </nav>
+    
+    <a href=""><button class="btn_login">Log in</button></a>
+
+</header>
+
+<header class="info_header">
+            
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-sm-4 a">
+                <p>Ruiru: 0718189714</p>
+            </div>
+            
+            <div class="col-sm-4 b">
+                <strong><h5>LET US TRANSFORM YOUR SPACE</h5></strong>
+            </div>
+            
+            <div class="col-sm-4 c">
+                <a href=""><img src="{% static "img/cart2.jpeg" %}"></a>
+            </div>
+
+        </div>
+    </div>
+    
+</header>  
+        
+        
+        
+
+        {% block content%}
+
+        {% endblock %}
+
+        
+        
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+       
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
