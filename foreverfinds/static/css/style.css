@@ -261,7 +261,7 @@ color: black;
 
 .section_two_living{
     height: 450px;
-    background: rgb(231, 230, 230);
+    background: white;
     display: flex;
     flex-direction: row;
 }
