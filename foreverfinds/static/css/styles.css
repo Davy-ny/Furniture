@@ -341,22 +341,8 @@ color: black;
     display: flex;
     flex-direction: row;
 }
+/*item...*/
 
-.item{
-    width: 355px;
-    height: 380px;
-    background: rgb(233, 232, 232);
-    margin-top: 10px;
-    margin-left: 10px;
-    border-radius: 5px;
-}
-
-.item_img{
-    width: 253px;
-    height: 250px;
-    margin-top: 20px;
-    margin-left: 45px;
-}
 
 .section_three_living .description{
     margin-left: 40px;

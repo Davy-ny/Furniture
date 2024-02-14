@@ -80,3 +80,19 @@
 .btn_now:hover{
     color: gold;
 }
+
+.item{
+    width: 355px;
+    height: 380px;
+    background: white;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+.item_img{
+    width: 273px;
+    height: 255px;
+    margin-top: 10px;
+    margin-left: 45px;
+}
