@@ -342,7 +342,21 @@ color: black;
     flex-direction: row;
 }
 /*item...*/
+.item{
+    width: 355px;
+    height: 380px;
+    background: white;
+    margin-top: 10px;
+    margin-left: 8px;
+    border-radius: 5px;
+}
 
+.item_img{
+    width: 273px;
+    height: 255px;
+    margin-top: 10px;
+    margin-left: 45px;
+}
 
 .section_three_living .description{
     margin-left: 40px;
@@ -379,8 +393,6 @@ color: black;
     color: gold;
 }
 
-
-
 .my_bedroom{
     color: aqua;
 }
@@ -400,7 +412,12 @@ color: black;
 }
 
 /* section one bedroom*/
-
+.section_one_bedroom{
+    height: 380px;
+    background: white;
+    display: flex;
+    flex-direction: row;
+}
 
 .first_line_bedroom{
     display: flex;
@@ -432,9 +449,27 @@ color: black;
 }
 
 /*section 2 bedroom*/
+.section_two_bedroom{
+    background-color: rgb(233, 232, 232);
+    margin: 15px 10px;
+    text-align: center;
+    height: 80px;
+    padding-top: 10px;
 
+}
 
+.section_three_bedroom{
+    height: 820px;
+    background: white;
+}
 
+.section_three_bedroom .our_furniture{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 20px;
+    font-size: 18px;
+}
 
-
-
+.section_three_bedroom .description{
+    margin-left: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
