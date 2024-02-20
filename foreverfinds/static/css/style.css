@@ -473,3 +473,64 @@ color: black;
     margin-left: 40px;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+.section_one_dining{
+    height: 380px;
+    background: white;
+    display: flex;
+    flex-direction: row;
+}
+
+.first_line_dining{
+    display: flex;
+    flex-direction: row;
+    height: 400px;
+    margin-left: 10px;
+}
+
+.first_line_dining div{
+    margin: 0 15px;
+    width: 260px;
+    height: 300px;
+    background: white;
+    margin-top: 20px;
+    margin-left: 60px;
+}
+
+.first_line_dining img{
+    width: 320px;
+    height: 310px;
+    padding: 10px 10px;
+}
+
+.first_line_dining strong a{
+padding-left: 15px;
+list-style-type: none;
+text-decoration: none;
+color: black;
+}
+
+.section_two_dining{
+    background-color: rgb(233, 232, 232);
+    margin: 15px 10px;
+    text-align: center;
+    height: 80px;
+    padding-top: 10px;
+
+}
+
+.section_three_dining{
+    height: 820px;
+    background: white;
+}
+
+.section_three_dining .our_furniture{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+.section_three_dining .description{
+    margin-left: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}

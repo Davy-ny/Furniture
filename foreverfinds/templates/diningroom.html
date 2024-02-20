@@ -12,10 +12,194 @@
         <title>kitchen_dining</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
     </head>
     <body>
         
+        <section class="section_one_dining">
+            <div class="side_menu">
+                <strong>Categories</strong>
+                <div class="list-group">
+                    <button type="button" class="list-group-item list-group-item-action">Dining Tables</button>
+                    <button type="button" class="list-group-item list-group-item-action" >China Cabinets</button>
+                    <button type="button" class="list-group-item list-group-item-action">Chairs</button>
+                    <button type="button" class="list-group-item list-group-item-action" >Dining Benches</button>
+                    <button type="button" class="list-group-item list-group-item-action" disable></button>
+                </div>
+            </div>
+
+                <div class="first_line_dining">
+                        <div><a><img src="{% static 'img/dining.jpg' %}" alt=""></a><br/>
+                        <strong><a href="{% url "living" %}">Dining Tables</a></strong>
+                        </div>
+            
+                        <div class="img_mid"><a><img src="{% static 'img/dresser.jpg' %}" alt=""></a><br/>
+                            <strong><a href="{% url "bedroom"%}">Cabinets</a></strong>
+                        </div>
+            
+                        <div><a><img src="{% static 'img/Cupboard.jpg' %}" alt=""></a><br/>
+                            <strong><a href="{% url "kitchen_dining"%}">Chairs</a></strong>
+                        </div>
+                  
+                </div>
+        </section>
+        <hr>
+
+        <section class="section_two_dining">
+            <div>
+                <h5>Get amaizing offers on furniture</h5>
+                <p>Keep shopping at foreverfinnds and stand a chance to get quality products with irresitable offers</p>
+            </div>
+        </section> 
+        <hr>
+
+        <section class="section_three_dining">
+            <div class="our_furniture">
+                <strong>Our Furniture</strong>
+            </div>
+
+            <div class="items_section">
+                <div class="item">
+                    <div>
+                        <a><img  class="item_img" src="{% static 'img/lux_bed.jpg' %}" alt=""></a>
+                    </div><br/>
+    
+                    <div class="description">
+                        <strong>3 Seater Leather Sofa</strong>
+                    </div>
+    
+                    <div class="price">
+                        <span class="before">Ksh.84,000</span>
+                        <button class="btn_addcart">Add to Cart</button>
+                        <button class="btn_now">Buy Now</button>
+                
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div>
+                        <a><img  class="item_img" src="{% static 'img/seat.jpg' %}" alt=""></a>
+                    </div><br/>
+    
+                    <div class="description">
+                        <strong>5 Seater woolen Sofa</strong>
+                    </div>
+    
+                    <div class="price">
+                        <span class="before">Ksh.58,000</span>
+                        <button class="btn_addcart">Add to Cart</button>
+                        <button class="btn_now">Buy Now</button>
+                
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div>
+                        <a><img  class="item_img" src="{% static 'img/floater_bed.jpg' %}" alt=""></a>
+                    </div><br/>
+    
+                    <div class="description">
+                        <strong>3 Family Couch</strong>
+                    </div>
+    
+                    <div class="price">
+                        <span class="before">Ksh.36,000</span>
+                        <button class="btn_addcart">Add to Cart</button>
+                        <button class="btn_now">Buy Now</button>
+                
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div>
+                        <a><img  class="item_img" src="{% static 'img/slipper_bed.jpg' %}" alt=""></a>
+                    </div><br/>
+    
+                    <div class="description">
+                        <strong>L-Couch 3 Seater Sofa</strong>
+                    </div>
+    
+                    <div class="price">
+                        <span class="before">Ksh.43,000</span>
+                        <button class="btn_addcart">Add to Cart</button>
+                        <button class="btn_now">Buy Now</button>
+                
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="items_section">
+                <div class="item">
+                    <div>
+                        <a><img  class="item_img" src="{% static 'img/floater_bed.jpg' %}" alt=""></a>
+                    </div><br/>
+    
+                    <div class="description">
+                        <strong>3 Seater Leather Sofa</strong>
+                    </div>
+    
+                    <div class="price">
+                        <span class="before">Ksh.84,000</span>
+                        <button class="btn_addcart">Add to Cart</button>
+                        <button class="btn_now">Buy Now</button>
+                
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div>
+                        <a><img  class="item_img" src="{% static 'img/lux_bed.jpg' %}" alt=""></a>
+                    </div><br/>
+    
+                    <div class="description">
+                        <strong>5 Seater woolen Sofa</strong>
+                    </div>
+    
+                    <div class="price">
+                        <span class="before">Ksh.58,000</span>
+                        <button class="btn_addcart">Add to Cart</button>
+                        <button class="btn_now">Buy Now</button>
+                
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div>
+                        <a><img  class="item_img" src="{% static 'img/seat.jpg' %}" alt=""></a>
+                    </div><br/>
+    
+                    <div class="description">
+                        <strong>3 Family Couch</strong>
+                    </div>
+    
+                    <div class="price">
+                        <span class="before">Ksh.36,000</span>
+                        <button class="btn_addcart">Add to Cart</button>
+                        <button class="btn_now">Buy Now</button>
+                
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div>
+                        <a><img  class="item_img" src="{% static 'img/seat.jpg' %}" alt=""></a>
+                    </div><br/>
+    
+                    <div class="description">
+                        <strong>L-Couch 3 Seater Sofa</strong>
+                    </div>
+    
+                    <div class="price">
+                        <span class="before">Ksh.43,000</span>
+                        <button class="btn_addcart">Add to Cart</button>
+                        <button class="btn_now">Buy Now</button>
+                
+                    </div>
+                </div>
+
+            </div>
+        </section>
         
         <script src="" async defer></script>
     </body>
