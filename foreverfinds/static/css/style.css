@@ -165,7 +165,7 @@ li a{
 }
 
 .section_three .description{
-    margin-left: 40px;
+    margin-left: 50px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -236,42 +236,13 @@ color: black;
     margin-top: 110px;
 }
 
-.first_line_living{
-    display: flex;
-    flex-direction: row;
-    height: 400px;
-    margin-left: 10px;
-}
 
-.first_line_living div{
-    margin: 0 15px;
-    width: 150px;
-    height: 200px;
-    background: white;
-    margin-top: 20px;
-    margin-left: 60px;
-}
 
-.first_line_living img{
-    width: 150px;
-    height: 150px;
-    padding: 10px 10px;
-    border-radius: 5px;
-}
+/*First line living*/
 
-.first_line_living strong a{
-padding-left: 15px;
-list-style-type: none;
-text-decoration: none;
-color: black;
-}
 
-.section_two_living{
-    height: 450px;
-    background: white;
-    display: flex;
-    flex-direction: row;
-}
+/*seection two living*/
+
 
 .side_menu strong{
 padding-left: 100px;
@@ -472,7 +443,7 @@ color: black;
 }
 
 .section_three_bedroom .description{
-    margin-left: 40px;
+    margin-left: 50px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -534,6 +505,6 @@ color: black;
 }
 
 .section_three_dining .description{
-    margin-left: 40px;
+    margin-left: 50px;
     font-family: Arial, Helvetica, sans-serif;
 }
