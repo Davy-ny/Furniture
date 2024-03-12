@@ -1,4 +1,4 @@
-#!/home/dave/mysite/fenv/bin/python3
+#!/home/dave/mysite/fenv/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys

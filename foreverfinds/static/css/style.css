@@ -508,3 +508,14 @@ color: black;
     margin-left: 50px;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+.menu_navs ul li{
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+    
+}
+
+.icons{
+background-color: black;
+}
