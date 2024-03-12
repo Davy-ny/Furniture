@@ -42,25 +42,25 @@
         <section class="section_one">
             <div class="first_line">
                 <div><a><img src="{% static 'img/seat.jpg' %}" alt=""></a><br/>
-                    <strong><a href="{% url "living" %}">Living Room</a></strong>
+                    <strong><a href="{% url 'living' %}">Living Room</a></strong>
                     </div>
         
                     <div class="img_mid"><a><img src="{% static 'img/bed.jpg' %}" alt=""></a><br/>
-                        <strong><a href="{% url "bedroom"%}">Bedroom</a></strong>
+                        <strong><a href="{% url 'bedroom'%}">Bedroom</a></strong>
                     </div>
         
                     <div><a><img src="{% static 'img/dining.jpg' %}" alt=""></a><br/>
-                        <strong><a href="{% url "kitchen_dining"%}">Kitchen and Dining</a></strong>
+                        <strong><a href="{% url 'kitchen_dining'%}">Kitchen and Dining</a></strong>
                     </div>
             </div>
 
             <div class="second_line">
                 <div class="img_next"><a><img src="{% static 'img/outdoor_seat.jpg' %}" alt=""></a><br/>
-                    <strong><a href="{% url "Outdoor"%}">Outdoor</a></strong>
+                    <strong><a href="{% url 'Outdoor'%}">Outdoor</a></strong>
                 </div>
 
                 <div class="img_sec_mid"><a><img src="{% static 'img/COUCH.jpeg' %}" alt=""></a><br/>
-                    <strong><a href="{% url "homeoffice"%}">Home Office</a></strong>
+                    <strong><a href="{% url 'homeoffice'%}">Home Office</a></strong>
                 </div>
 
                 <div><a><img src="{% static 'img/IMG_20210327_173859_504.jpg' %}" alt=""></a><br/>
@@ -169,17 +169,25 @@
                 <div>
                     <ul>
                         <strong><li><a href="{% url 'living' %}">Living Room</a></li></strong>
-                        <strong><li><a href="{% url "bedroom"%}">Bedroom</a></li></strong>
-                        <strong><li><a href="{% url "homeoffice"%}">Home Office</a></li></strong>
-                        <strong><li><a href="{% url "kitchen_dining"%}">Kitchen And Dining Room</a></li></strong>
-                        <strong><li><a href="{% url "Outdoor"%}">Outdoor</a></li></strong>
-                        <strong><li><a href="{% url "contact"%}">Contact Us</a></li></strong>
+                        <strong><li><a href="{% url 'bedroom'%}">Bedroom</a></li></strong>
+                        <strong><li><a href="{% url 'homeoffice'%}">Home Office</a></li></strong>
+                        <strong><li><a href="{% url 'kitchen_dining'%}">Kitchen And Dining Room</a></li></strong>
+                        <strong><li><a href="{% url 'Outdoor'%}">Outdoor</a></li></strong>
+                        <strong><li><a href="{% url 'index'%}">Home Page</a></li></strong>
                     </ul>
 
                 </div>
 
               </div>
+<<<<<<< HEAD
 //user comments section
+=======
+
+              <div class="icons">
+                <i class="bi bi-facebook"></i>
+
+              </div>
+>>>>>>> 4fd0ec8 (trial_fix)
         </footer>
     
     </body>
