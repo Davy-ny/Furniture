@@ -21,3 +21,9 @@ def HomeOfficePage(request):
 
 def OutdoorPage(request):
     return render(request, 'outdoor.html')
+
+def CheckoutPage(request):
+    return render(request, 'checkout.html')
+
+def CartPage(request):
+    return render(request, 'cart.html')

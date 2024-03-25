@@ -10,5 +10,7 @@ urlpatterns = [
     path('bedroom/', views.BedroomPage, name='bedroom'),
     path('contact/', views.ContactPage, name='contact'),
     path('homeoffice/', views.HomeOfficePage, name='homeoffice'),
+    path('cart/', views.CartPage, name='cart'),
+    path('checkout/', views.CheckoutPage, name='checkout'),
     path('Outdoor/', views.OutdoorPage, name='Outdoor')
 ]
