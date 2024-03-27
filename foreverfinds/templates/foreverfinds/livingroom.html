@@ -1,4 +1,4 @@
-{% extends 'main.html' %}
+{% extends 'foreverfinds/main.html' %}
 
 {% block content %}
 
@@ -9,52 +9,52 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>bedroom</title>
+        <title>living</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="{% static 'css/style.css' %}">
-        
+        <link rel="stylesheet" href="{% static 'css/styles.css' %}">
     </head>
     <body>
         
-        <section class="section_one_bedroom">
+        <section class="section_two_living">
             <div class="side_menu">
                 <strong>Categories</strong>
                 <div class="list-group">
-                    <button type="button" class="list-group-item list-group-item-action">Beds</button>
-                    <button type="button" class="list-group-item list-group-item-action" disable></button>
-                    <button type="button" class="list-group-item list-group-item-action">Dressers</button>
-                    <button type="button" class="list-group-item list-group-item-action" disable></button>
-                    <button type="button" class="list-group-item list-group-item-action">Cupboards</button>
+                    <button type="button" class="list-group-item list-group-item-action">Sofas</button>
+                    <button type="button" class="list-group-item list-group-item-action">Tables</button>
+                    <button type="button" class="list-group-item list-group-item-action">Tv Stands</button>
+                    <button type="button" class="list-group-item list-group-item-action">Storage Cabinets</button>
+                    <button type="button" class="list-group-item list-group-item-action">Chairs</button>
                 </div>
             </div>
 
-                <div class="first_line_bedroom">
-                        <div><a><img src="{% static 'img/lux_bed.jpg' %}" alt=""></a><br/>
-                        <strong><a href="{% url "living" %}">Beds</a></strong>
+                <div class="first_line_living">
+                        <div><a><img src="{% static 'img/seat.jpg' %}" alt=""></a><br/>
+                        <strong><a href="{% url "living" %}">Sofas</a></strong>
                         </div>
             
-                        <div class="img_mid"><a><img src="{% static 'img/dresser.jpg' %}" alt=""></a><br/>
-                            <strong><a href="{% url "bedroom"%}">Dressers</a></strong>
+                        <div class="img_mid"><a><img src="{% static 'img/table.jpg' %}" alt=""></a><br/>
+                            <strong><a href="{% url "bedroom"%}">Tables</a></strong>
                         </div>
             
-                        <div><a><img src="{% static 'img/Cupboard.jpg' %}" alt=""></a><br/>
-                            <strong><a href="{% url "kitchen_dining"%}">Cupboards</a></strong>
+                        <div><a><img src="{% static 'img/Tv Stand.jpg' %}" alt=""></a><br/>
+                            <strong><a href="{% url "kitchen_dining"%}">Tv Stands</a></strong>
                         </div>
                   
                 </div>
         </section>
-        <hr>
 
-        <section class="section_two_bedroom">
+        <hr>
+        <section class="section_four_living">
             <div>
                 <h5>Get amaizing offers on furniture</h5>
                 <p>Keep shopping at foreverfinds and stand a chance to get quality products with irresitable offers</p>
             </div>
-        </section> 
+        </section>
         <hr>
 
-        <section class="section_three_bedroom">
+        <section class="section_three_living">
             <div class="our_furniture">
                 <strong>Our Furniture</strong>
             </div>
@@ -62,7 +62,7 @@
             <div class="items_section">
                 <div class="item">
                     <div>
-                        <a><img  class="item_img" src="{% static 'img/lux_bed.jpg' %}" alt=""></a>
+                        <a><img  class="item_img" src="{% static 'img/seat.jpg' %}" alt=""></a>
                     </div><br/>
     
                     <div class="description">
@@ -96,7 +96,7 @@
 
                 <div class="item">
                     <div>
-                        <a><img  class="item_img" src="{% static 'img/floater_bed.jpg' %}" alt=""></a>
+                        <a><img  class="item_img" src="{% static 'img/seat.jpg' %}" alt=""></a>
                     </div><br/>
     
                     <div class="description">
@@ -113,7 +113,7 @@
 
                 <div class="item">
                     <div>
-                        <a><img  class="item_img" src="{% static 'img/slipper_bed.jpg' %}" alt=""></a>
+                        <a><img  class="item_img" src="{% static 'img/seat.jpg' %}" alt=""></a>
                     </div><br/>
     
                     <div class="description">
@@ -133,7 +133,7 @@
             <div class="items_section">
                 <div class="item">
                     <div>
-                        <a><img  class="item_img" src="{% static 'img/floater_bed.jpg' %}" alt=""></a>
+                        <a><img  class="item_img" src="{% static 'img/seat.jpg' %}" alt=""></a>
                     </div><br/>
     
                     <div class="description">
@@ -150,7 +150,7 @@
 
                 <div class="item">
                     <div>
-                        <a><img  class="item_img" src="{% static 'img/lux_bed.jpg' %}" alt=""></a>
+                        <a><img  class="item_img" src="{% static 'img/seat.jpg' %}" alt=""></a>
                     </div><br/>
     
                     <div class="description">
@@ -200,8 +200,12 @@
                 </div>
 
             </div>
-        </section>
-
+        </section>    
+            
+                
+            
+         
+        
     </body>
 </html>
 

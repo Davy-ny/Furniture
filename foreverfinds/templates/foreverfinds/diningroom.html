@@ -1,60 +1,59 @@
-{% extends 'main.html' %}
+{% extends 'foreverfinds/main.html' %}
 
 {% block content %}
 
-{% load static %}
+{% load static%}
 <!DOCTYPE html>
 
 <html>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>living</title>
+        <title>kitchen_dining</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="{% static 'css/style.css' %}">
-        <link rel="stylesheet" href="{% static 'css/styles.css' %}">
     </head>
     <body>
         
-        <section class="section_two_living">
+        <section class="section_one_dining">
             <div class="side_menu">
                 <strong>Categories</strong>
                 <div class="list-group">
-                    <button type="button" class="list-group-item list-group-item-action">Sofas</button>
-                    <button type="button" class="list-group-item list-group-item-action">Tables</button>
-                    <button type="button" class="list-group-item list-group-item-action">Tv Stands</button>
-                    <button type="button" class="list-group-item list-group-item-action">Storage Cabinets</button>
+                    <button type="button" class="list-group-item list-group-item-action">Dining Tables</button>
+                    <button type="button" class="list-group-item list-group-item-action" >China Cabinets</button>
                     <button type="button" class="list-group-item list-group-item-action">Chairs</button>
+                    <button type="button" class="list-group-item list-group-item-action" >Dining Benches</button>
+                    <button type="button" class="list-group-item list-group-item-action" disable></button>
                 </div>
             </div>
 
-                <div class="first_line_living">
-                        <div><a><img src="{% static 'img/seat.jpg' %}" alt=""></a><br/>
-                        <strong><a href="{% url "living" %}">Sofas</a></strong>
+                <div class="first_line_dining">
+                        <div><a><img src="{% static 'img/dining.jpg' %}" alt=""></a><br/>
+                        <strong><a href="{% url 'living' %}">Dining Tables</a></strong>
                         </div>
             
-                        <div class="img_mid"><a><img src="{% static 'img/table.jpg' %}" alt=""></a><br/>
-                            <strong><a href="{% url "bedroom"%}">Tables</a></strong>
+                        <div class="img_mid"><a><img src="{% static 'img/dresser.jpg' %}" alt=""></a><br/>
+                            <strong><a href="{% url 'bedroom'%}">Cabinets</a></strong>
                         </div>
             
-                        <div><a><img src="{% static 'img/Tv Stand.jpg' %}" alt=""></a><br/>
-                            <strong><a href="{% url "kitchen_dining"%}">Tv Stands</a></strong>
+                        <div><a><img src="{% static 'img/Cupboard.jpg' %}" alt=""></a><br/>
+                            <strong><a href="{% url 'kitchen_dining'%}">Chairs</a></strong>
                         </div>
                   
                 </div>
         </section>
-
         <hr>
-        <section class="section_four_living">
+
+        <section class="section_two_dining">
             <div>
                 <h5>Get amaizing offers on furniture</h5>
-                <p>Keep shopping at foreverfinds and stand a chance to get quality products with irresitable offers</p>
+                <p>Keep shopping at foreverfinds kitchen and dining and stand a chance to get quality and customized products with irresitable offers</p>
             </div>
-        </section>
+        </section> 
         <hr>
 
-        <section class="section_three_living">
+        <section class="section_three_dining">
             <div class="our_furniture">
                 <strong>Our Furniture</strong>
             </div>
@@ -62,7 +61,7 @@
             <div class="items_section">
                 <div class="item">
                     <div>
-                        <a><img  class="item_img" src="{% static 'img/seat.jpg' %}" alt=""></a>
+                        <a><img  class="item_img" src="{% static 'img/lux_bed.jpg' %}" alt=""></a>
                     </div><br/>
     
                     <div class="description">
@@ -96,7 +95,7 @@
 
                 <div class="item">
                     <div>
-                        <a><img  class="item_img" src="{% static 'img/seat.jpg' %}" alt=""></a>
+                        <a><img  class="item_img" src="{% static 'img/floater_bed.jpg' %}" alt=""></a>
                     </div><br/>
     
                     <div class="description">
@@ -113,7 +112,7 @@
 
                 <div class="item">
                     <div>
-                        <a><img  class="item_img" src="{% static 'img/seat.jpg' %}" alt=""></a>
+                        <a><img  class="item_img" src="{% static 'img/slipper_bed.jpg' %}" alt=""></a>
                     </div><br/>
     
                     <div class="description">
@@ -133,7 +132,7 @@
             <div class="items_section">
                 <div class="item">
                     <div>
-                        <a><img  class="item_img" src="{% static 'img/seat.jpg' %}" alt=""></a>
+                        <a><img  class="item_img" src="{% static 'img/floater_bed.jpg' %}" alt=""></a>
                     </div><br/>
     
                     <div class="description">
@@ -150,7 +149,7 @@
 
                 <div class="item">
                     <div>
-                        <a><img  class="item_img" src="{% static 'img/seat.jpg' %}" alt=""></a>
+                        <a><img  class="item_img" src="{% static 'img/lux_bed.jpg' %}" alt=""></a>
                     </div><br/>
     
                     <div class="description">
@@ -200,12 +199,9 @@
                 </div>
 
             </div>
-        </section>    
-            
-                
-            
-         
+        </section>
         
+        <script src="" async defer></script>
     </body>
 </html>
 
