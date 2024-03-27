@@ -1,29 +1,34 @@
 from django.shortcuts import render
+from .models import *
 
 
 def IndexPage(request):
-    return render(request, 'index.html')
+    return render(request, 'foreverfinds/index.html')
 
 def LivingPage(request):
-    return render(request, 'livingroom.html')
+    products = Product.objects.all()
+    context = {'products':products}
+    return render(request, 'foreverfinds/livingroom.html', context)
 
 def Kitchen_DiningPage(request):
-    return render(request, 'diningroom.html')
+    return render(request, 'foreverfinds/diningroom.html')
 
 def BedroomPage(request):
-    return render(request, 'bedroom.html')
+    return render(request, 'foreverfinds/bedroom.html')
 
 def ContactPage(request):
-    return render(request, 'contact_us.html')
+    return render(request, 'foreverfinds/contact_us.html')
 
 def HomeOfficePage(request):
-    return render(request, 'homeoffice.html')
+    return render(request, 'foreverfinds/homeoffice.html')
 
 def OutdoorPage(request):
-    return render(request, 'outdoor.html')
+    return render(request, 'foreverfinds/outdoor.html')
 
 def CheckoutPage(request):
-    return render(request, 'checkout.html')
+    context = {}
+    return render(request, 'foreverfinds/checkout.html', context)
 
 def CartPage(request):
-    return render(request, 'cart.html')
+    context = {}
+    return render(request, 'foreverfinds/cart.html', context)
