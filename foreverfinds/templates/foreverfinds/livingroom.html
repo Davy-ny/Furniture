@@ -31,15 +31,15 @@
 
                 <div class="first_line_living">
                         <div><a><img src="{% static 'img/seat.jpg' %}" alt=""></a><br/>
-                        <strong><a href="{% url "living" %}">Sofas</a></strong>
+                        <strong><a href="{% url 'living' %}">Sofas</a></strong>
                         </div>
             
                         <div class="img_mid"><a><img src="{% static 'img/table.jpg' %}" alt=""></a><br/>
-                            <strong><a href="{% url "bedroom"%}">Tables</a></strong>
+                            <strong><a href="{% url 'bedroom'%}">Tables</a></strong>
                         </div>
             
                         <div><a><img src="{% static 'img/Tv Stand.jpg' %}" alt=""></a><br/>
-                            <strong><a href="{% url "kitchen_dining"%}">Tv Stands</a></strong>
+                            <strong><a href="{% url 'kitchen_dining'%}">Tv Stands</a></strong>
                         </div>
                   
                 </div>
@@ -60,56 +60,26 @@
             </div>
 
             <div class="items_section">
+                {% for product in products%}
                 <div class="item">
                     <div>
                         <a><img  class="item_img" src="{% static 'img/seat.jpg' %}" alt=""></a>
                     </div><br/>
     
                     <div class="description">
-                        <strong>3 Seater Leather Sofa</strong>
+                        <strong>{{product.name}}</strong>
                     </div>
     
                     <div class="price">
-                        <span class="before">Ksh.84,000</span>
+                        <span class="before">Ksh.{{product.price|floatformat:2}}</span>
                         <button class="btn_addcart">Add to Cart</button>
                         <button class="btn_now">Buy Now</button>
                 
                     </div>
+                    {% endfor %}
                 </div>
 
-                <div class="item">
-                    <div>
-                        <a><img  class="item_img" src="{% static 'img/seat.jpg' %}" alt=""></a>
-                    </div><br/>
-    
-                    <div class="description">
-                        <strong>5 Seater woolen Sofa</strong>
-                    </div>
-    
-                    <div class="price">
-                        <span class="before">Ksh.58,000</span>
-                        <button class="btn_addcart">Add to Cart</button>
-                        <button class="btn_now">Buy Now</button>
                 
-                    </div>
-                </div>
-
-                <div class="item">
-                    <div>
-                        <a><img  class="item_img" src="{% static 'img/seat.jpg' %}" alt=""></a>
-                    </div><br/>
-    
-                    <div class="description">
-                        <strong>3 Family Couch</strong>
-                    </div>
-    
-                    <div class="price">
-                        <span class="before">Ksh.36,000</span>
-                        <button class="btn_addcart">Add to Cart</button>
-                        <button class="btn_now">Buy Now</button>
-                
-                    </div>
-                </div>
 
                 <div class="item">
                     <div>
