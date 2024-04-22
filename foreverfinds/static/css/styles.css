@@ -1,38 +1,15 @@
-.first_line_living{
-    display: flex;
-    flex-direction: row;
-    height: 400px;
-    margin-left: 5px;
+.items_section{
+    float: left;
 }
 
-.first_line_living div{
-    margin: 0 15px;
-    width: 260px;
-    height: 300px;
+.item{
+    width: 355px;
+    height: 380px;
     background: white;
-    margin-top: 20px;
-    margin-left: 50px;
+    margin-top: 10px;
+    margin-left: 8px;
+    border-radius: 5px;
+    float: left;
+    border-width: 2px;
+    border-style: double;
 }
-
-.first_line_living img{
-    width: 320px;
-    height: 310px;
-    padding: 10px 12px;
-    border-radius: 10px;
-}
-
-.first_line_living strong a{
-    padding-left: 15px;
-    list-style-type: none;
-    text-decoration: none;
-    color: black;
-    }
-
-    .section_two_living{
-        height: 410px;
-        background: white;
-        display: flex;
-        flex-direction: row;
-    }
-
-    
