@@ -310,8 +310,7 @@ color: black;
 }
 
 .items_section{
-    display: flex;
-    flex-direction: row;
+    float: left;
 }
 /*item...*/
 .item{
