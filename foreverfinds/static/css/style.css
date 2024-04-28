@@ -58,7 +58,7 @@ footer{
     height: 400px;
     padding: 20px; 
     margin-top: 15px;
-    position: relative;
+    position: static;
 }
 
 .card-body{
