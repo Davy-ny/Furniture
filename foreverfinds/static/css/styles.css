@@ -1,9 +1,11 @@
 .items_section{
-    float: left;
+    display: flex;
+    flex-direction: row;
+    
 }
 
 .item{
-    float: left;
+    
     width: 355px;
     height: 380px;
     background: white;
