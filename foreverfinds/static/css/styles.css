@@ -1,5 +1,6 @@
 .items_section{
-    float: left;
+    display: flex;
+    flex-direction: row;
 }
 
 .item{
