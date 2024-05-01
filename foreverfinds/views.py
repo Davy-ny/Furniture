@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from .models import *
+from django.http import JsonResponse
 
 
 def IndexPage(request):
@@ -32,3 +33,6 @@ def CheckoutPage(request):
 def CartPage(request):
     context = {}
     return render(request, 'foreverfinds/cart.html', context)
+
+def updateItem(request):
+    return JsonResponse('Item was added', safe=False)
