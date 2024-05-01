@@ -58,7 +58,6 @@ footer{
     height: 400px;
     padding: 20px; 
     margin-top: 15px;
-    position: static;
 }
 
 .card-body{
@@ -349,10 +348,10 @@ color: black;
 
 
 .item_img{
-    width: 273px;
+    width: 293px;
     height: 255px;
     margin-top: 10px;
-    margin-left: 45px;
+    margin-left: 40px;
 }
 
 .section_three_living .description{

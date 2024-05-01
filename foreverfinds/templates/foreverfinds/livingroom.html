@@ -14,6 +14,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="{% static 'css/style.css' %}">
         <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+
+        <script type="text/javascript">
+            var user = '{{request.user}}'
+        </script>
     </head>
     <body>
         
@@ -72,8 +76,8 @@
     
                     <div class="price">
                         <span class="before">Ksh.{{product.price|floatformat:2}}</span>
-                        <button class="btn_addcart">Add to Cart</button>
-                        <button class="btn_now">Buy Now</button>
+                        <button data-product={{product.id}} data-action="add" class="btn_addcart update-cart">Add to Cart</button>
+                        <button class="btn_now">View</button>
                 
                     </div>
                     {% endfor %}
@@ -88,7 +92,7 @@
             
                 
             
-         
+        <script type="text/javascript" src="{% static 'js/cart.js' %}"></script>  
         
     </body>
 </html>
