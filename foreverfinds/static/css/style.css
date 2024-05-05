@@ -389,6 +389,10 @@ color: black;
     color: gold;
 }
 
+.btn_addcart:hover{
+    color: grey;
+}
+
 .my_bedroom{
     color: aqua;
 }
