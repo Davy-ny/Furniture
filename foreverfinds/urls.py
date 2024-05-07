@@ -12,5 +12,7 @@ urlpatterns = [
     path('homeoffice/', views.HomeOfficePage, name='homeoffice'),
     path('cart/', views.CartPage, name='cart'),
     path('checkout/', views.CheckoutPage, name='checkout'),
-    path('Outdoor/', views.OutdoorPage, name='Outdoor')
+    path('Outdoor/', views.OutdoorPage, name='Outdoor'),
+
+    path('update_item/', views.updateItem, name='update_item')
 ]
