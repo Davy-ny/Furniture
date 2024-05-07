@@ -63,27 +63,30 @@
                 <strong>Our Furniture</strong>
             </div>
 
-            
+        <div class="coat">  
+            {% for product in products %}  
             <div class="items_section">
-                {% for product in products %}
-                <div class="item">
-                    <div>
-                        <a><img  class="item_img" src="{{product.imageURL}}" alt=""></a>
-                    </div><br/>
-    
-                    <div class="description">
-                        <strong>{{product.name}}</strong>
-                    </div>
-    
-                    <div class="price">
-                        <span class="before">Ksh.{{product.price|floatformat:2}}</span>
-                        <button data-product={{product.id}} data-action="add" class="btn_addcart update-cart">Add to Cart</button>
-                        <button class="btn_now">View</button>
                 
+                    <div class="item">
+                        <div>
+                            <a><img  class="item_img" src="{{product.imageURL}}" alt=""></a>
+                        </div><br/>
+        
+                        <div class="description">
+                            <strong>{{product.name}}</strong>
+                        </div>
+        
+                        <div class="price">
+                            <span class="before">Ksh.{{product.price|floatformat:2}}</span>
+                            <button data-product={{product.id}} data-action="add" class="btn_addcart update-cart">Add to Cart</button>
+                            <button class="btn_now">View</button>
+                    
+                        </div>
                     </div>
-                    {% endfor %} 
-                </div>
                 
+            </div>
+            {% endfor %}
+        </div>    
 
                 
 

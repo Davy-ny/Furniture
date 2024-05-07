@@ -2,6 +2,7 @@ from django.contrib import admin
 from django.urls import path
 from . import views
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.IndexPage, name='index'),
@@ -16,5 +17,7 @@ urlpatterns = [
     path('Outdoor/', views.OutdoorPage, name='Outdoor'),
 
     path('update_item/', views.updateItem, name='update_item'),
-    path('process_order/', views.processOrder, name='process_order')
+    path('process_order/', views.processOrder, name='process_order'),
+
+    
 ]

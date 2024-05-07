@@ -1,10 +1,17 @@
+.coat{
+    float: left;
+    height: 100%;
+   }
+
 .items_section{
-    display: flex;
-    flex-direction: row;
+    float: left;
+    margin-left: 25px;
+    
 }
 
 .item{
-    display: inline-block;
+    
+    align-items: center;
     width: 355px;
     height: 380px;
     background: white;

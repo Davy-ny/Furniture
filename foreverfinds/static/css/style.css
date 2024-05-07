@@ -58,7 +58,7 @@ footer{
     height: 400px;
     padding: 20px; 
     margin-top: 15px;
-    position: static;
+    
 }
 
 .card-body{
@@ -337,7 +337,6 @@ color: black;
 }
 
 .section_three_living{
-    height: 820px;
     background: white;
 }
 
@@ -350,8 +349,9 @@ color: black;
 /*item_section...*/
 .items_section{
 
-    display: flexbox;
-    flex-direction: row;
+    display: flex;
+    
+    justify-content: space-between;
     
  }
 
