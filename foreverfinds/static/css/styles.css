@@ -1,8 +1,10 @@
+
 .items_section{
+
     display: flexbox;
     flex-direction: row;
-    
-}
+    float: left;
+ }
 
 .item{
     display: inline-block;
@@ -15,3 +17,4 @@
     border-width: 2px;
     border-style: double;
 }
+
