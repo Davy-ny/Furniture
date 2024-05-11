@@ -1,7 +1,11 @@
+
 .items_section{
 
     display: flexbox;
     flex-direction: row;
+
+    float: left;
+
  }
 
 .item{

@@ -347,9 +347,25 @@ color: black;
 }
 
 /*item_section...*/
+.items_section{
+
+    display: flexbox;
+    flex-direction: row;
+    float: left;
+ }
 
 /*item...*/
-
+.item{
+    display: inline-block;
+    width: 355px;
+    height: 380px;
+    background: white;
+    margin-top: 10px;
+    margin-left: 20px;
+    border-radius: 5px;
+    border-width: 2px;
+    border-style: double;
+}
 
 .item_img{
     width: 293px;
