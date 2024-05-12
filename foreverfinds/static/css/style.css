@@ -356,7 +356,7 @@ color: black;
 
 /*item...*/
 .item{
-    float: left;
+    display: inline-block;
     width: 355px;
     height: 380px;
     background: white;
