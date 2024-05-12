@@ -12,6 +12,10 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+        <script type="text/javascript">
+            var user = '{{request.user}}'
+        </script>
     </head>
     <body>
         
@@ -54,9 +58,11 @@
                     </div>
             </div>
 
+            
+            
             <div class="second_line">
                 <div class="img_next"><a><img src="{% static 'img/outdoor_seat.jpg' %}" alt=""></a><br/>
-                    <strong><a href="{% url 'Outdoor'%}">Outdoor</a></strong>
+                    <strong><a href="{% url 'Outdoor' %}">Outdoor</a></strong>
                 </div>
 
             
