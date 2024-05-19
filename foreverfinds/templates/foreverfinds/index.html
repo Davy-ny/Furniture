@@ -12,6 +12,10 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+        <script type="text/javascript">
+            var user = '{{request.user}}'
+        </script>
     </head>
     <body>
         
@@ -54,10 +58,14 @@
                     </div>
             </div>
 
+            
+            
             <div class="second_line">
                 <div class="img_next"><a><img src="{% static 'img/outdoor_seat.jpg' %}" alt=""></a><br/>
-                    <strong><a href="{% url 'Outdoor'%}">Outdoor</a></strong>
+                    <strong><a href="{% url 'Outdoor' %}">Outdoor</a></strong>
                 </div>
+
+            
 
                 <div class="img_sec_mid"><a><img src="{% static 'img/COUCH.jpeg' %}" alt=""></a><br/>
                     <strong><a href="{% url 'homeoffice'%}">Home Office</a></strong>
@@ -70,12 +78,16 @@
 
             </div>
         </section>
+
+      <hr>
         <section class="section_two">
           <div>
               <h5>Get amaizing offers on furniture</h5>
               <p>Keep shopping at foreverfinnds and stand a chance to get quality products with irresitable offers</p>
           </div>
       </section>
+
+      <hr>
 
       <section class="section_three">
         <div class="items_section">
@@ -149,42 +161,44 @@
         </div>  
       </section>
         
-        <footer>
-            <div class="card mb-3" style="max-width: 540px;">
-                <div class="row g-0">
-                  <div class="col-md-4">
-                    <img src="{% static 'img/finds.jpg' %}" class="img-fluid rounded-start" alt="...">
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                    </div>
-                  </div>
+      <footer>
+        <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="{% static 'img/finds.jpg' %}" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
                 </div>
               </div>
+            </div>
+          </div>
 
-              <div class="menu_navs">
-                <div>
-                    <ul>
-                        <strong><li><a href="{% url 'living' %}">Living Room</a></li></strong>
-                        <strong><li><a href="{% url 'bedroom'%}">Bedroom</a></li></strong>
-                        <strong><li><a href="{% url 'homeoffice'%}">Home Office</a></li></strong>
-                        <strong><li><a href="{% url 'kitchen_dining'%}">Kitchen And Dining Room</a></li></strong>
-                        <strong><li><a href="{% url 'Outdoor'%}">Outdoor</a></li></strong>
-                        <strong><li><a href="{% url 'index'%}">Home Page</a></li></strong>
-                    </ul>
+          <div class="menu_navs">
+            <div>
+                <ul>
+                    <strong><li><a href="{% url 'living' %}">Living Room</a></li></strong>
+                    <strong><li><a href="{% url 'bedroom'%}">Bedroom</a></li></strong>
+                    <strong><li><a href="{% url 'homeoffice'%}">Home Office</a></li></strong>
+                    <strong><li><a href="{% url 'kitchen_dining'%}">Kitchen And Dining Room</a></li></strong>
+                    <strong><li><a href="{% url 'Outdoor'%}">Outdoor</a></li></strong>
+                    <strong><li><a href="{% url 'index'%}">Home Page</a></li></strong>
+                </ul>
 
-                </div>
+            </div>
 
-              </div>
+          </div>
 
-              <div class="icons">
-                <i class="bi bi-facebook"></i>
 
-              </div>
-        </footer>
+          <div class="icons">
+            <i class="bi bi-facebook"></i>
+
+          </div>
+
+    </footer>  
     
     </body>
 </html>

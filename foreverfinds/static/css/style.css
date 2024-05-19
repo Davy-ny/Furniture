@@ -47,7 +47,7 @@ padding-top: 10px;
 .info_header img{
     height: 40px;
     width: 50px;
-    margin-left: 400px;
+    margin-left: 300px;
     
 }
 
@@ -58,7 +58,7 @@ footer{
     height: 400px;
     padding: 20px; 
     margin-top: 15px;
-    position: relative;
+    position: static;
 }
 
 .card-body{
@@ -184,13 +184,17 @@ color: black;
 }
 
 .section_two{
-    background-color: black;
+    background-color: rgb(233, 232, 232);
     margin: 15px 10px;
     text-align: center;
     height: 80px;
     padding-top: 10px;
-    color: gold;
+    color: black;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.section_two:hover{
+    color: gold;
 }
 
 .section_one_living{
@@ -344,15 +348,31 @@ color: black;
 }
 
 /*item_section...*/
+.items_section{
+
+    display: flexbox;
+    flex-direction: row;
+    
+ }
 
 /*item...*/
-
+.item{
+    display: inline-block;
+    width: 355px;
+    height: 380px;
+    background: white;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+    border-width: 2px;
+    border-style: double;
+}
 
 .item_img{
-    width: 273px;
+    width: 293px;
     height: 255px;
     margin-top: 10px;
-    margin-left: 45px;
+    margin-left: 40px;
 }
 
 .section_three_living .description{
@@ -388,6 +408,10 @@ color: black;
 
 .btn_now:hover{
     color: gold;
+}
+
+.btn_addcart:hover{
+    color: grey;
 }
 
 .my_bedroom{

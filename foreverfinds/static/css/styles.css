@@ -1,13 +1,19 @@
 .items_section{
-    float: left;
-}
+
+    display: flex;
+    flex-direction: row;
+    
+    
+ }
 
 .item{
+    
+    display: inline-block;
     width: 355px;
     height: 380px;
     background: white;
     margin-top: 10px;
-    margin-left: 8px;
+    margin-left: 25px;
     border-radius: 5px;
     border-width: 2px;
     border-style: double;
