@@ -63,9 +63,9 @@
                 <strong>Our Furniture</strong>
             </div>
 
-            {% for product in products %}
+            
             <div class="items_section">
-                
+                {% for product in products %}
                 <div class="item">
                     <div>
                         <a><img  class="item_img" src="{{product.imageURL}}" alt=""></a>
@@ -81,9 +81,9 @@
                         <button class="btn_now">View</button>
                 
                     </div>
-                    
+                    {% endfor %} 
                 </div>
-                {% endfor %}
+                
 
                 
 

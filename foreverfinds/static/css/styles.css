@@ -1,13 +1,9 @@
 .items_section{
-
     display: flex;
     flex-direction: row;
-    
-    
- }
+}
 
 .item{
-    
     display: inline-block;
     width: 355px;
     height: 380px;
