@@ -7,7 +7,7 @@ for (i = 0; i < updateBtns.length; i++) {
         console.log('productId:', productId, 'action:', action)
 
         console.log('USER:', user)
-        if(user === 'AnonymousUser'){
+        if(user == 'AnonymousUser'){
             addCookieItem(productId, action)
         }else{
            updateUserOrder(productId, action) 
@@ -15,28 +15,34 @@ for (i = 0; i < updateBtns.length; i++) {
     })
 }
 
+
+
 function addCookieItem(productId, action){
     console.log('Not loggen in...')
 
-    if (action == 'add'){
-        if (cart[productId] == undefined){
-            cart[productId] = {'quantity': 1}        
+    if(action === 'add'){
+        if(cart[productId] === undefined){
+            cart[productId] = {'quantity':1};
         }else{
-            cart[productId]['quantity'] += 1
+            cart[productId]['quantity'] += 1;
         }
     }
 
-    if (action == 'remove'){
-        cart[productId]['quantity'] -= 1
+    if (action === 'remove') {
+        if (cart[productId] !== undefined) { // Ensure cart[productId] exists before accessing its properties
+            cart[productId]['quantity'] -= 1;
 
-        if (cart[productId]['quantity'] <= 0){
-            console.log('Item should be deleted')
-            delete cart[productId];
-
+            if (cart[productId]['quantity'] <= 0) {
+                console.log('Item should be deleted');
+                delete cart[productId];
+            }
+        } else {
+            console.warn(`Attempted to remove a product that doesn't exist in the cart: ${productId}`);
         }
     }
-    console.log('Cart:', cart)
-    document.cookie = 'cart=' + JSON.stringify(cart) + ";domain=;path=/"
+
+    console.log('Cart:', cart);
+    document.cookie = 'cart='+ JSON.stringify(cart) + ";domain=;path=/"
     location.reload()
 }
 
